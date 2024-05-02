@@ -1,0 +1,23 @@
+.nt-drawer__header {
+  padding-bottom: 10;
+  margin-bottom: 10;
+
+  .nt-drawer__header-image {
+    border-radius: 10;
+  }
+
+  .nt-drawer__header-brand {
+    font-size: 18;
+    font-weight: bold;
+  }
+
+  .nt-drawer__header-version {
+    font-size: 10;
+    margin-left: 5;
+    margin-top: 8;
+  }
+}
+
+.nt-drawer__content {
+  margin: 10;
+}

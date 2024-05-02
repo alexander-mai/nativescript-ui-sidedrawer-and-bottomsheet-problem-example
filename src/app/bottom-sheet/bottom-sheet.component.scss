@@ -1,0 +1,43 @@
+.main {
+  background-color: #e8e8e8;
+}
+
+.action-bar {
+  .action-bar-title {
+    horizontal-align: left;
+    font-size: 20;
+  }
+
+  .action-image {
+    width: 24;
+    height: 24;
+    margin-left: 10;
+  }
+
+  color: #909090;
+  margin: 10 10 0 10;
+}
+
+.action-buttons.dark {
+  visibility: collapsed;
+}
+
+.ns-dark {
+  &.main {
+    background-color: #303030;
+  }
+
+  &.action-bar {
+    color: #e8e8e8;
+  }
+
+  &.action-buttons {
+    &.light {
+      visibility: collapse;
+    }
+
+    &.dark {
+      visibility: visible;
+    }
+  }
+}

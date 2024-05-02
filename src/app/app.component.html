@@ -1,3 +1,19 @@
-<GridLayout>
-  <page-router-outlet></page-router-outlet>
-</GridLayout>
+<RadSideDrawer>
+    <GridLayout class="nt-drawer" rows="auto, *" tkDrawerContent>
+        <GridLayout class="nt-drawer__header" columns="10,64,5,171" row="0" rows="20,44">
+            <Image class="nt-drawer__header-image" col="1" row="0" rowSpan="3"
+                   src="~/assets/image/logo_small.png"></Image>
+            <StackLayout class="m-b-5x" col="3" orientation="horizontal" row="0">
+                <Label class="nt-drawer__header-brand" col="1" row="0" text="Test-App"></Label>
+                <Label text="v1.0.0" class="nt-drawer__header-version" col="1" row="0"></Label>
+            </StackLayout>
+        </GridLayout>
+        <StackLayout class="nt-drawer__content" iosIgnoreSafeArea="true" orientation="vertical" row="1">
+            <Label text="drawer content"></Label>
+        </StackLayout>
+    </GridLayout>
+
+    <GridLayout tkMainContent>
+        <page-router-outlet></page-router-outlet>
+    </GridLayout>
+</RadSideDrawer>
